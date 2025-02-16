@@ -1,42 +1,107 @@
-# Indique aux robots que toutes les pages peuvent être explorées, sauf restrictions spécifiées
 User-agent: *
-Disallow: /admin/
-Disallow: /tmp/
-Disallow: /private/
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
 
-# Bloquer des URL avec paramètres inutiles pour l'indexation
-Disallow: /*?debug=true
-Disallow: /*?preview=true
+# Priorité d'exploration
+Crawl-delay: 5
 
-# Permettre les fichiers nécessaires au bon affichage et fonctionnement
-Allow: /css/
-Allow: /js/
-Allow: /images/
+# Accès aux fichiers JS et CSS
+Allow: /*.js$
+Allow: /*.css$
 
-# Référencement des ressources multimédias
-Allow: *.png
-Allow: *.jpg
-Allow: *.webp
-Allow: *.css
-Allow: *.js
+# Interdiction du contenu dupliqué
+Disallow: /tag/
+Disallow: /category/
+Disallow: /author/
+Disallow: /search/
+Disallow: /*?s=
+Disallow: /*&s=
+Disallow: /feed/
+Disallow: /comments/
+Disallow: /trackback/
 
-# Fournir le chemin du fichier sitemap pour une meilleure indexation
-Sitemap: https://www.clairvoyancemedium.com/sitemap.xml
+# Blocage des paramètres inutiles
+Disallow: /*?replytocom=
+Disallow: /*?utm_source=
+Disallow: /*?utm_medium=
+Disallow: /*?utm_campaign=
+Disallow: /*?fbclid=
 
-# Autorisation pour les robots Google et Bing pour maximiser les campagnes publicitaires
+# Priorisation des contenus essentiels
+Sitemap: https://clairvoyancemedium.github.io/Hoe-de-man-of-vrouw-van-je-leven-snel-terugwinnen.github.io/sitemap.xml
+
+# Directives spécifiques pour les bots
 User-agent: Googlebot
 Allow: /
-User-agent: AdsBot-Google
-Allow: /
+Disallow: /?ref=
+
 User-agent: Bingbot
 Allow: /
+Disallow: /?ref=
 
-# Bloquer les robots nuisibles ou non désirés
-User-agent: BadBot
-Disallow: /
-User-agent: EvilScraper
+User-agent: Yandex
 Disallow: /
 
-# Empêcher l'exploration des fichiers sensibles
-Disallow: /config/
-Disallow: /backup/
+User-agent: Baiduspider
+Disallow: /
+
+# Autorisation des images et vidéos
+User-agent: Googlebot-Image
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+
+User-agent: Googlebot-Video
+Allow: /*.mp4$
+Allow: /*.mov$
+Allow: /*.avi$
+
+# Blocage des mauvais bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Barkrowler
+Disallow: /
+
+# OpenAI et ChatGPT Friendly
+User-agent: ChatGPTBot
+Allow: /
+
+# Encourage le SEO vocal et IA
+User-agent: Google-Extended
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+
+# Permissions pour les API et IA
+User-agent: BingPreview
+Allow: /
+
+# Limitation du scrap inutile
+User-agent: DataForSeoBot
+Disallow: /
+
+# Prévention des scrapers
+User-agent: Scrapy
+Disallow: /
+
+# Instructions pour l’indexation optimale
+User-agent: Googlebot
+Allow: /
+Disallow: /404/
+Allow: /ai-content/
+
+# Sitemap AI Search
+Sitemap: https://clairvoyancemedium.github.io/Hoe-de-man-of-vrouw-van-je-leven-snel-terugwinnen.github.io/ai-sitemap.xml
