@@ -1,21 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+    <!-- Page principale -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/</loc>
-        <lastmod>2024-12-09</lastmod>
+        <loc>https://clairvoyancemedium.github.io/Hoe-de-man-of-vrouw-van-je-leven-snel-terugwinnen.github.io/</loc>
+        <lastmod>2025-02-17</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <!-- Pages secondaires -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/tarifs</loc>
-        <lastmod>2024-12-09</lastmod>
-        <changefreq>weekly</changefreq>
+        <loc>https://clairvoyancemedium.github.io/Hoe-de-man-of-vrouw-van-je-leven-snel-terugwinnen.github.io/about</loc>
+        <lastmod>2025-02-17</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
     <url>
-        <loc>https://clairvoyancemedium.github.io/Voyancepartelephonepaschere.github.io/contact</loc>
-        <lastmod>2024-12-09</lastmod>
+        <loc>https://clairvoyancemedium.github.io/Hoe-de-man-of-vrouw-van-je-leven-snel-terugwinnen.github.io/contact</loc>
+        <lastmod>2025-02-17</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
     </url>
+
+    <!-- Sitemap News pour indexation rapide des actualités -->
+    <url>
+        <loc>https://clairvoyancemedium.github.io/Hoe-de-man-of-vrouw-van-je-leven-snel-terugwinnen.github.io/news</loc>
+        <news:news>
+            <news:publication>
+                <news:name>Clairvoyance News</news:name>
+                <news:language>nl</news:language>
+            </news:publication>
+            <news:publication_date>2025-02-17</news:publication_date>
+            <news:title>Hoe je de man of vrouw van je leven terugwint</news:title>
+        </news:news>
+    </url>
+
+    <!-- Sitemap pour les images -->
+    <url>
+        <loc>https://clairvoyancemedium.github.io/Hoe-de-man-of-vrouw-van-je-leven-snel-terugwinnen.github.io/</loc>
+        <image:image>
+            <image:loc>https://i.imgur.com/GmyGlKk.webp</image:loc>
+            <image:title>Sentimentele Rituelen</image:title>
+        </image:image>
+    </url>
+
+    <!-- Sitemap pour les vidéos -->
+    <url>
+        <loc>https://clairvoyancemedium.github.io/Hoe-de-man-of-vrouw-van-je-leven-snel-terugwinnen.github.io/video</loc>
+        <video:video>
+            <video:thumbnail_loc>https://i.imgur.com/GmyGlKk.webp</video:thumbnail_loc>
+            <video:title>Comment retrouver l'amour avec la magie rouge</video:title>
+            <video:description>Découvrez les secrets spirituels de la magie rouge pour attirer l'amour.</video:description>
+            <video:content_loc>https://clairvoyancemedium.github.io/videos/magie-rouge.mp4</video:content_loc>
+            <video:publication_date>2025-02-17</video:publication_date>
+        </video:video>
+    </url>
+
 </urlset>
